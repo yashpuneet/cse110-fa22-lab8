@@ -9,7 +9,7 @@ test('phone number 1234567891 is not valid', () => {
 });
 
 test('phone number (123)4567891 is not valid', () => {
-    expect(functions.isPhoneNumber('1234567891')).toBe(false);
+    expect(functions.isPhoneNumber('(123)4567891')).toBe(false);
 });
 
 test('phone number 123-456-7891 is valid', () => {
